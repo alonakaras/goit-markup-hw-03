@@ -1,0 +1,224 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+}
+:root {
+  --header-nav-color: #2e2f42;
+  --header-address-color: #434455;
+  --main-title-color: #2e2f42;
+  --secondary-title-color: #434455;
+  --accent-color: #4d5ae5;
+  --hero-footer-backgroud-color: #2e2f42;
+  --hero-title-color: #ffffff;
+  --team-background-color: #f4f4fd;
+  --footer-desc-color: #e7e9fc;
+  --logo-web-color: #4d5ae5;
+  --logo-footer-studio-color: #f4f4fd;
+  --logo-header-studio-color: #2e2f42;
+}
+/* ---------------- header styles--------------- */
+.header {
+}
+.header-nav {
+}
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-header-studio-color);
+  text-decoration: none;
+}
+.header-logo-span {
+  color: var(--logo-web-color);
+}
+.header-logo:hover,
+.header-logo:focus {
+}
+
+.header-list {
+}
+.header-list-item {
+  font-weight: 500;
+}
+.header-list-link {
+  text-decoration: none;
+  color: var(--header-nav-color);
+}
+.header-list-link:hover,
+.header-list-link:focus {
+  color: #404bbf;
+}
+.header-address {
+  font-style: normal;
+}
+.header-address-list {
+}
+.header-address-item {
+}
+.header-address-link {
+  text-decoration: none;
+  color: var(--header-address-color);
+}
+.header-address-link:hover,
+.header-address-linl:focus {
+  color: #404bbf;
+}
+/* ------------- portfolio page main styles--------------- */
+.portfolio {
+}
+
+.list {
+  list-style: none;
+}
+
+.portfolio-list {
+}
+.portfolio-list-item {
+}
+.portfolio-list-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: #e7e9fc;
+  cursor: pointer;
+}
+.portfolio-list-btn:hover,
+.portfolio-list-btn:focus {
+  background-color: #404bbf;
+  color: #ffffff;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+}
+.portfolio-link-item {
+}
+.portfolio-card {
+  text-decoration: none;
+}
+
+.portfolio-cards-img {
+}
+.portfolio-cards-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.portfolio-cards-desc {
+  color: var(--secondary-title-color);
+}
+/* -------------  footer styles------------- */
+.footer {
+  background-color: var(--hero-footer-backgroud-color);
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-footer-studio-color);
+  text-decoration: none;
+}
+.footer-logo-span {
+  color: var(--logo-web-color);
+}
+.footer-desc {
+  color: var(--footer-desc-color);
+}
+/* --------main page hero section styles----------------------- */
+.hero {
+  background-color: var(--hero-footer-backgroud-color);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--hero-title-color);
+}
+.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
+/* ---------main page philosophy section styles------------------ */
+.philosophy {
+}
+.philosophy-list {
+}
+.philosophy-list-item {
+}
+.philosophy-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.philosophy-item-desc {
+  color: var(--secondary-title-color);
+}
+/* ------------main page what section styles--------------------------- */
+.what {
+}
+.what-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-title-color);
+}
+.what-list {
+}
+.what-list-item {
+}
+/* ------------main page team section styles---------------------------- */
+.team {
+  background-color: #f4f4fd;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-title-color);
+}
+.team-list {
+}
+.team-list-item {
+}
+.team-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.team-item-desc {
+  color: var(--secondary-title-color);
+}
