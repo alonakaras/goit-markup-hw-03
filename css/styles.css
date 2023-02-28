@@ -11,6 +11,7 @@
   --logo-web-color: #4d5ae5;
   --logo-footer-studio-color: #f4f4fd;
   --logo-header-studio-color: #2e2f42;
+  --main-padding: 120px 0;
 }
 /* ---------------- base styles--------------- */
 body {
@@ -49,6 +50,7 @@ p {
   display: flex;
 }
 .header {
+  border-bottom: 1px #e7e9fc;
 }
 .header-nav {
   display: flex;
@@ -208,7 +210,8 @@ p {
 }
 .hero {
   background-color: var(--hero-footer-backgroud-color);
-  padding: 472px 188px;
+  display: block;
+  padding: 188px 0;
 }
 .hero-title {
   font-weight: 700;
@@ -216,7 +219,9 @@ p {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
-  margin: 0 316px;
+  width: 496px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -230,7 +235,9 @@ p {
   display: block;
   padding: 16px 32px;
   margin-top: 48px;
-  margin-left: 465px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -241,11 +248,12 @@ p {
 .philosophy-container {
 }
 .philosophy {
+  display: block;
+  padding: var(--main-padding);
 }
 .philosophy-list {
   display: flex;
   gap: 24px;
-  margin-top: 120px;
 }
 .philosophy-list-item {
 }
@@ -262,6 +270,8 @@ p {
 }
 /* ------------main page what section styles--------------------------- */
 .what {
+  display: block;
+  padding-bottom: 120px;
 }
 .what-title {
   font-weight: 700;
@@ -270,20 +280,23 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-title-color);
-  margin-top: 120px;
-  margin-left: 403px;
+  width: 323px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 72px;
 }
 .what-list {
   display: flex;
   gap: 24px;
-  margin-bottom: 120px;
 }
 .what-list-item {
 }
 /* ------------main page team section styles---------------------------- */
 .team {
   background-color: #f4f4fd;
+  display: block;
+  padding: var(--main-padding);
+  text-align: center;
 }
 /* .title-container {
   display: flex;
@@ -299,15 +312,11 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-title-color);
-  margin-left: 483px;
   margin-bottom: 72px;
-  display: block;
-  padding-top: 120px;
 }
 .team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .team-list-item {
   text-align: center;
