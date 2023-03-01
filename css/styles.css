@@ -4,6 +4,7 @@
   --main-title-color: #2e2f42;
   --secondary-title-color: #434455;
   --accent-color: #4d5ae5;
+  --link-hover-color: #404bbf;
   --hero-footer-backgroud-color: #2e2f42;
   --hero-title-color: #ffffff;
   --team-background-color: #f4f4fd;
@@ -19,7 +20,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  background-color: #ffffff;
+  background-color: var(--hero-title-color);
 }
 h1,
 h2,
@@ -29,6 +30,24 @@ h5,
 h6,
 p {
   margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  top: -150%;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  pointer-events: none;
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  white-space: nowrap;
 }
 
 .list {
@@ -50,7 +69,7 @@ p {
   display: flex;
 }
 .header {
-  border-bottom: 1px #e7e9fc;
+  border-bottom: 1px solid var(--footer-desc-color);
 }
 .header-nav {
   display: flex;
@@ -90,7 +109,7 @@ p {
 }
 .header-list-link:hover,
 .header-list-link:focus {
-  color: #404bbf;
+  color: var(--link-hover-color);
 }
 .header-address {
   font-style: normal;
@@ -109,14 +128,16 @@ p {
 }
 .header-address-link:hover,
 .header-address-linl:focus {
-  color: #404bbf;
+  color: var(--link-hover-color);
 }
 /* ------------- portfolio page main styles--------------- */
 .portfolio-container {
 }
 .portfolio-link-container {
-  display: block;
   padding: 32px 16px;
+  border-bottom: 1px solid var(--footer-desc-color);
+  border-left: 1px solid var(--footer-desc-color);
+  border-right: 1px solid var(--footer-desc-color);
 }
 .portfolio {
   padding-top: 96px;
@@ -138,16 +159,18 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--accent-color);
-  background-color: #e7e9fc;
+  background-color: var(--footer-desc-color);
   cursor: pointer;
-  border: 1px;
-  border-color: #e7e9fc;
+  background: var(--team-background-color);
+  border-radius: 4px;
+  border: solid 1px;
+  border-color: var(--footer-desc-color);
   padding: 12px 24px;
 }
 .portfolio-list-btn:hover,
 .portfolio-list-btn:focus {
-  background-color: #404bbf;
-  color: #ffffff;
+  background-color: var(--link-hover-color);
+  color: var(--hero-title-color);
 }
 
 .portfolio-link {
@@ -162,8 +185,7 @@ p {
 }
 
 .portfolio-link-item {
-  background: #ffffff;
-  border: 1px solid #e7e9fc;
+  background: var(--hero-title-color);
   width: 360px;
 }
 .portfolio-card {
@@ -200,6 +222,7 @@ p {
   text-transform: uppercase;
   color: var(--logo-footer-studio-color);
   text-decoration: none;
+  display: block;
   margin-bottom: 16px;
 }
 .footer-logo-span {
@@ -214,7 +237,6 @@ p {
 }
 .hero {
   background-color: var(--hero-footer-backgroud-color);
-  display: block;
   padding: 188px 0;
 }
 .hero-title {
@@ -233,26 +255,27 @@ p {
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--hero-title-color);
   cursor: pointer;
-  background-color: #4d5ae5;
+  background-color: var(--logo-web-color);
   display: block;
   padding: 16px 32px;
   margin-top: 48px;
   border: none;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--link-hover-color);
 }
 
 /* ---------main page philosophy section styles------------------ */
 .philosophy-container {
 }
 .philosophy {
-  display: block;
   padding: var(--main-padding);
 }
 .philosophy-list {
@@ -274,7 +297,6 @@ p {
 }
 /* ------------main page what section styles--------------------------- */
 .what {
-  display: block;
   padding-bottom: 120px;
   text-align: center;
 }
@@ -296,8 +318,7 @@ p {
 }
 /* ------------main page team section styles---------------------------- */
 .team {
-  background-color: #f4f4fd;
-  display: block;
+  background-color: var(--logo-footer-studio-color);
   padding: var(--main-padding);
   text-align: center;
 }
@@ -317,7 +338,7 @@ p {
 }
 .team-list-item {
   text-align: center;
-  background: #ffffff;
+  background: var(--hero-title-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -340,6 +361,5 @@ img {
   height: auto;
 }
 .team-container {
-  display: block;
   padding: 32px 0;
 }
